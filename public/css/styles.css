@@ -1,0 +1,67 @@
+/**
+ * styles.css
+ *
+ * Computer Science 50
+ * Problem Set 7
+ *
+ * Global CSS.
+ */
+ 
+.welcome
+{
+    margin-left: 15px;
+    margin-top: 15px;
+    text-align: left;
+    font-weight: 700;
+    color: #514377;
+}
+body {
+  overflow-y: scroll;
+  /*
+  background: url(../img/rainbowchalk.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  */
+}
+
+.container
+{
+    /* center contents */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#top
+{
+    /* surround with whitespace */
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+#top .nav
+{
+    /* center navigation pills */
+    display: inline-block;
+}
+
+#middle
+{
+    padding-top:80px;
+    /* center form controls */
+    /* display: inline-block; */
+
+    /* override Bootstrap's 100% width for form controls */
+    /* width: auto; */
+}
+
+#bottom
+{
+    /* shrink bottom's font size */
+    font-size: smaller;
+
+    /* surround with whitespace */
+    margin: 20px;
+}

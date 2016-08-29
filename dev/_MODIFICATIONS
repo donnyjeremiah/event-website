@@ -1,0 +1,37 @@
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+##### Symbolic Link Added:(In command Prompt) #####
+C:\WINDOWS\system32>mklink /D C:\wamp\www\event_website\public\storage C:\wamp\www\event_website\storage\app\public
+symbolic link created for C:\wamp\www\event_website\public\storage <<===>> C:\wamp\www\event_website\storage\app\public
+
+https://laravel.com/docs/5.2/filesystem#the-public-disk
+
+------------------------------------------------------------------------------------------------------------------------
+##### Traits and Services added.
+
+------------------------------------------------------------------------------------------------------------------------
+##### RESOURCE ROUTE NAME IN ROUTE GROUPS: #####
+vsch's solution:
+http://laravel.io/forum/06-21-2014-resource-route-names-without-prefix
+1. Created file ResourceNoPrefixRegistrar.php in app\Providers
+2. Added code in register() of app\Providers\AppServiceProvider.php
+Change:
+Route names of Resource in a route Group are no longer prefixed by value of 'prefix' parameter of group options.
+If you want add a prefix to the route name use, 'as' => 'prefix.' to the group options.
+
+------------------------------------------------------------------------------------------------------------------------
+##### filp/Whoops Error Handling: #####
+Better Error Messages in Laravel for Easier Debugging [Laravel Quick Tips]
+https://www.youtube.com/watch?v=IWW26hIOv-I
+
+Added the code from
+
+------------------------------------------------------------------------------------------------------------------------
+##### AUTHENTICATION: #####
+1. In register() of RegistersUsers.php
+Change: To create a Visitor model after creating a User.
+2. In validator() of AuthController.php
+Change: To validate username(Visitors) before registering a user.
